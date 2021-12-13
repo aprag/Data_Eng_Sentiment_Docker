@@ -31,26 +31,25 @@ h1 {
     color:  rgb(2, 20, 117);
 	border-bottom: 2px solid rgb(2, 20, 117);
 	margin-bottom: 1.5em;
-	background: url(../_images/icon_sprites_50.png) no-repeat
+
 }
 
 .example_a {
     border: none;
-    background: #404040;
+    background: #2986cc;
     color: #cfe9ff !important;
-    font-weight: 100;
-    padding: 30px;
+    font-weight: 60;
+    padding: 10px;
     text-transform: uppercase;
     border-radius: 10px;
     display: inline-block;
     transition: all 0.3s ease 0s;
-
     float: right;
     margin-top: 2em;
 }
 
 .example_a:hover {
-    color: #404040 !important;
+    color: #2986cc !important;
     font-weight: 800 !important;
     letter-spacing: 5px;
     background: none;
