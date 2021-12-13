@@ -12,16 +12,16 @@ table, th, td {
         <h1>DATA ENGINEERING II:</h1>
         <h1>This is our Sentiment Analysis application:</h1>
         <form method="POST">
-            <textarea name="text1" placeholder="You can write your sentences right here ... " rows="4" cols="100"></textarea><br><br>
+            <textarea name="text1" placeholder="You can write your sentences right here ... " rows="3" cols="110"></textarea><br><br>
 
             <input class="example_a" type="submit">
         </form>
         {% if final %}
         <div>
             <h2>For the sentence : '{{ text1 }}'</h2>
-            <p style="color:rgb(2, 20, 117);">Sentence was rated as {{text2}}% positive</p>
-            <p style="color:rgb(2, 20, 117);">Sentence was rated as {{text3}}% neutral</p>
-            <p style="color:rgb(2, 20, 117);">Sentence was rated as {{text5}}% negative</p>
+            <p style="color:rgb(2, 20, 117);">Sentence was rated as {{text2 *100}}% positive &#128512;</p>
+            <p style="color:rgb(2, 20, 117);">Sentence was rated as {{text3 *100}}% neutral  &#128528;</p>
+            <p style="color:rgb(2, 20, 117);">Sentence was rated as {{text5 *100}}% negative &#128555;</p>
             <p style="color:rgb(2, 20, 117);">Compound = {{text4}} so sentence overall rated as {{text6}} </p>
             {% else %}
             <p></p>
