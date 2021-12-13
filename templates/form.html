@@ -1,0 +1,33 @@
+<html>
+    <head>
+	<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+        <title>{{ title }} Sentiment Analysis</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>DATA ENGINEERING II:</h1>
+        <h1>This is our Sentiment Analysis application:</h1>
+        <form method="POST">
+            <textarea name="text1" placeholder="You can write your sentences right here ... " rows="4" cols="100"></textarea><br><br>
+
+            <input class="example_a" type="submit">
+        </form>
+        {% if final %}
+        <div>
+            <h2>For the sentence : '{{ text1 }}'</h2>
+            <p style="color:rgb(2, 20, 117);">Sentence was rated as {{text2}}% positive</p>
+            <p style="color:rgb(2, 20, 117);">Sentence was rated as {{text3}}% neutral</p>
+            <p style="color:rgb(2, 20, 117);">Sentence was rated as {{text5}}% negative</p>
+            <p style="color:rgb(2, 20, 117);">Compound = {{text4}} so sentence overall rated as {{text6}} </p>
+            {% else %}
+            <p></p>
+            {% endif %}
+        </div>
+        <h2>Made by Goubeau Armand & Lellouche Dan</h2>
+    </body>
+</html>
+
