@@ -1,10 +1,6 @@
 from flask import Flask, request, render_template
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import nltk
-from string import punctuation
-import re
 from nltk.corpus import stopwords
 import redis
 
