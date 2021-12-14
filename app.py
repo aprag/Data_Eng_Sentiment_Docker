@@ -2,14 +2,14 @@ from flask import Flask, request, render_template
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import nltk
 from nltk.corpus import stopwords
-import redis
+
 
 nltk.download('stopwords')
 
 set(stopwords.words('english'))
 
 app = Flask(__name__)
-cache = redis.Redis(host='redis', port=6379)
+
 
 @app.route('/')
 def my_form():
